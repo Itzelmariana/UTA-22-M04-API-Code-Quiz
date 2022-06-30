@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz Challenge</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <p>View Highscores</p>
+      <p id="time-display">Time: <span id="timer">50</span></p>
+    </nav>
+    <section class="container-fluid">
+      <h1>Coding Quiz Challenge</h1>
+      <p>
+        Try answer th following code-related questions whithing the time limit.
+        Keep in mind that incorrect answer will penalize your scoretime by ten
+        seconds!
+      </p>
+      <button id="start-quiz" class="btn btn-primary btn-lg btn-block">
+        Start Quiz
+      </button>
+    </section>
+    <div id="questions" class="container-fluid">
+      <ul>
+        <h2>
+          1. What allow us to use JavaScript to interac with HTML as a
+          programming interface?
+        </h2>
+        <li class="wrong mt-3 d-block btn btn-primary btn-lg">APIs</li>
+        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">CSS</li>
+        <li class="correct mt-3 d-block btn btn-primary btn-lg btn-block">
+          DOM
+        </li>
+        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
+          All above
+        </li>
+      </ul>
+
+      <ul>
+        2. What are the four principles of Computational thinking?
+        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
+          API, CSS, JavaScript and DOM
+        </li>
+        <li class="correct mt-3 d-block btn btn-primary btn-lg btn-block">
+          Decomposition, Pattern Recognition, Absraction and Algorithms
+        </li>
+        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
+          Variables. for loops, while loops and functions
+        </li>
+        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
+          None of the above
+        </li>
+      </ul>
+
+      <ul>
+        3. if you want to use the same chuck of code multiple times in your
+        program, you should make the code a:
+        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
+          Variable
+        </li>
+        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
+          Console.log
+        </li>
+        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
+          Return value
+        </li>
+        <li class="correct mt-3 d-block btn btn-primary btn-lg btn-block">
+          Procedure or function
+        </li>
+      </ul>
+
+      <ul>
+        4. What are the types of loop statements?
+        <li class="correct mt-3 d-block btn btn-primary btn-lg btn-block">
+          For loops and while loops
+        </li>
+        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
+          function loops and nested loops
+        </li>
+        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
+          Variables and return value
+        </li>
+        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
+          Objects and list
+        </li>
+      </ul>
+
+      <ul>
+        5.Primitive data type in JavaScript:
+        <li class="wrong">String</li>
+        <li class="wrong">Number</li>
+        <li class="wrong">Boolean</li>
+        <li class="correct">All above</li>
+      </ul>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>

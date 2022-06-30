@@ -1,0 +1,27 @@
+section {
+  text-align: center;
+  max-width: 650px;
+  margin: 40px auto;
+}
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+section p {
+  line-height: 40px;
+}
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+ul {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 0;
+  text-align: center;
+}
+li {
+  max-width: 300px;
+  text-align: center;
+  margin: auto;
+}
