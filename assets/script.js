@@ -94,6 +94,7 @@ function countdown() {
 
   if (getTimer() <= 0) {
     endGame();
+    hideQuestions();
   }
 }
 
@@ -191,7 +192,6 @@ function showHighscores() {
   hideNav.className = "d-none navbar navbar-light bg-light";
   var gameover = document.querySelector("#gameover");
   gameover.className = "d-none";
-
   document.querySelector("section").className = "d-none";
 }
 
