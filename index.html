@@ -23,92 +23,132 @@
   </head>
   <body>
     <nav class="navbar navbar-light bg-light">
-      <p>View Highscores</p>
+      <p id="view-scores" class="view-score">View Highscores</p>
       <p id="time-display">Time: <span id="timer">50</span></p>
     </nav>
-    <section class="container-fluid">
-      <h1>Coding Quiz Challenge</h1>
-      <p>
-        Try answer th following code-related questions whithing the time limit.
-        Keep in mind that incorrect answer will penalize your scoretime by ten
-        seconds!
-      </p>
-      <button id="start-quiz" class="btn btn-primary btn-lg btn-block">
-        Start Quiz
-      </button>
-    </section>
-    <div id="questions" class="container-fluid">
-      <ul>
-        <h2>
-          1. What allow us to use JavaScript to interac with HTML as a
-          programming interface?
-        </h2>
-        <li class="wrong mt-3 d-block btn btn-primary btn-lg">APIs</li>
-        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">CSS</li>
-        <li class="correct mt-3 d-block btn btn-primary btn-lg btn-block">
-          DOM
-        </li>
-        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
-          All above
-        </li>
-      </ul>
+    <div class="content">
+      <section class="container-fluid">
+        <h1>Coding Quiz Challenge</h1>
+        <p>
+          Try answer the following code-related questions whithing the time
+          limit. Keep in mind that incorrect answer will penalize your scoretime
+          by ten seconds!
+        </p>
+        <button id="start-quiz" class="btn btn-primary btn-md custom-button">
+          Start Quiz
+        </button>
+      </section>
 
-      <ul>
-        2. What are the four principles of Computational thinking?
-        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
-          API, CSS, JavaScript and DOM
-        </li>
-        <li class="correct mt-3 d-block btn btn-primary btn-lg btn-block">
-          Decomposition, Pattern Recognition, Absraction and Algorithms
-        </li>
-        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
-          Variables. for loops, while loops and functions
-        </li>
-        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
-          None of the above
-        </li>
-      </ul>
+      <div id="questions" class="container-fluid">
+        <ul>
+          <h2>
+            What allow us to use JavaScript to interact with HTML as a
+            programming interface?
+          </h2>
+          <li class="wrong mt-3 d-block btn btn-primary btn-md custom-button">
+            APIs
+          </li>
+          <li class="wrong mt-3 d-block btn btn-primary btn-md custom-button">
+            CSS
+          </li>
+          <li class="correct mt-3 d-block btn btn-primary btn-md custom-button">
+            DOM
+          </li>
+          <li class="wrong mt-3 d-block btn btn-primary btn-md custom-button">
+            All above
+          </li>
+        </ul>
 
-      <ul>
-        3. if you want to use the same chuck of code multiple times in your
-        program, you should make the code a:
-        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
-          Variable
-        </li>
-        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
-          Console.log
-        </li>
-        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
-          Return value
-        </li>
-        <li class="correct mt-3 d-block btn btn-primary btn-lg btn-block">
-          Procedure or function
-        </li>
-      </ul>
+        <ul>
+          <h2>What are the four principles of Computational thinking?</h2>
+          <li class="wrong mt-3 d-block btn btn-primary btn-md custom-button">
+            API, CSS, JavaScript and DOM
+          </li>
+          <li class="correct mt-3 d-block btn btn-primary btn-md custom-button">
+            Decomposition, Pattern Recognition, Absraction and Algorithms
+          </li>
+          <li class="wrong mt-3 d-block btn btn-primary btn-md custom-button">
+            Variables. for loops, while loops and functions
+          </li>
+          <li class="wrong mt-3 d-block btn btn-primary btn-md custom-button">
+            None of the above
+          </li>
+        </ul>
 
-      <ul>
-        4. What are the types of loop statements?
-        <li class="correct mt-3 d-block btn btn-primary btn-lg btn-block">
-          For loops and while loops
-        </li>
-        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
-          function loops and nested loops
-        </li>
-        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
-          Variables and return value
-        </li>
-        <li class="wrong mt-3 d-block btn btn-primary btn-lg btn-block">
-          Objects and list
-        </li>
-      </ul>
+        <ul>
+          <h2>
+            if you want to use the same chuck of code multiple times in your
+            program, you should make the code a:
+          </h2>
+          <li class="wrong mt-3 d-block btn btn-primary btn-md custom-button">
+            Variable
+          </li>
+          <li class="wrong mt-3 d-block btn btn-primary btn-md custom-button">
+            Console.log
+          </li>
+          <li class="wrong mt-3 d-block btn btn-primary btn-md custom-button">
+            Return value
+          </li>
+          <li class="correct mt-3 d-block btn btn-primary btn-md custom-button">
+            Procedure or function
+          </li>
+        </ul>
 
-      <ul>
-        5.Primitive data type in JavaScript:
-        <li class="wrong">String</li>
-        <li class="wrong">Number</li>
-        <li class="wrong">Boolean</li>
-        <li class="correct">All above</li>
-      </ul>
+        <ul>
+          <h2>What are the types of loop statements?</h2>
+          <li class="correct mt-3 d-block btn btn-primary btn-md custom-button">
+            For loops and while loops
+          </li>
+          <li class="wrong mt-3 d-block btn btn-primary btn-md custom-button">
+            function loops and nested loops
+          </li>
+          <li class="wrong mt-3 d-block btn btn-primary btn-md custom-button">
+            Variables and return value
+          </li>
+          <li class="wrong mt-3 d-block btn btn-primary btn-md custom-button">
+            Objects and list
+          </li>
+        </ul>
+
+        <ul>
+          <h2>Primitive data type in JavaScript:</h2>
+          <li class="wrong mt-3 d-block btn btn-primary btn-md custom-button">
+            String
+          </li>
+          <li class="wrong mt-3 d-block btn btn-primary btn-md custom-button">
+            Number
+          </li>
+          <li class="wrong mt-3 d-block btn btn-primary btn-md custom-button">
+            Boolean
+          </li>
+          <li class="correct mt-3 d-block btn btn-primary btn-md custom-button">
+            All above
+          </li>
+        </ul>
+      </div>
+
+      <div class="game-over" id="gameover">
+        <h2>All done</h2>
+        <p>Your final score is <span class="final-score"></span></p>
+        <label
+          >Enter your initials:<input type="text" id="input-initials" />
+          <input
+            type="submit"
+            class="btn btn-primary btn-md custom-button"
+            id="submit-btn"
+        /></label>
+      </div>
+
+      <div class="highscores" id="highscores">
+        <h2>Highscores</h2>
+        <p id="result" class="result"></p>
+        <button id="goback" class="btn btn-primary btn-md custom-button">
+          Go Back
+        </button>
+        <button id="clear" class="btn btn-primary btn-md custom-button">
+          Clear Highscores
+        </button>
+      </div>
     </div>
 
     <script src="assets/script.js"></script>
