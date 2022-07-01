@@ -195,9 +195,7 @@ function showHighscores() {
   document.querySelector("section").className = "d-none";
 }
 
-function storeInitials(event) {
-  event.preventDefault();
-  console.log(event);
+function storeInitials() {
   var inputInitials = document.querySelector("#input-initials").value;
 
   var storedScores = localStorage.getItem("highscores");
