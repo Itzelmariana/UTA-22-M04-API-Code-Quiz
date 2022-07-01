@@ -19,7 +19,7 @@ function populateScores() {
     highscoresStored.appendChild(element);
   }
 }
-function clearHighscores(event) {
+function clearHighscores() {
   localStorage.setItem("highscores", JSON.stringify([]));
   populateScores();
 }
@@ -112,8 +112,22 @@ function endGame() {
   hideQuestions();
 }
 
+function maybeMove(question) {
+  function moveToNextQuestion() {
+    if (question === currentQuestion && getTimer() > 1) {
+      var questions = document.querySelector("#questions").children;
+      var questionN = questions[currentQuestion];
+      questionN.className = "d-none";
+      currentQuestion = currentQuestion + 1;
+      var questions = document.querySelector("#questions").children;
+      var question1 = questions[currentQuestion];
+      question1.className = "d-block";
+    }
+  }
+  return moveToNextQuestion;
+}
+
 function handleAnswerClick(event) {
-  console.log(event);
   var classes = event.target.classList;
   var isCorrect = false;
   for (var i = 0; i < classes.length; i++) {
@@ -142,13 +156,7 @@ function handleAnswerClick(event) {
       result.textContent = "Incorrect";
     }
 
-    setTimeout(function () {
-      questionN.className = "d-none";
-      currentQuestion = currentQuestion + 1;
-      var questions = document.querySelector("#questions").children;
-      var question1 = questions[currentQuestion];
-      question1.className = "d-block";
-    }, 1000);
+    setTimeout(maybeMove(currentQuestion), 1000);
     questionN.appendChild(hr);
     questionN.appendChild(result);
   } else {
@@ -169,7 +177,6 @@ function startCountdown() {
 
   //+ Array.from(document.querySelectorAll("hr"));
   for (var i = 0; i < nodesWithFeedback.length; i++) {
-    console.log(nodesWithFeedback);
     nodesWithFeedback[i].remove();
   }
   var sectionDelete = document.querySelector("section");
@@ -182,7 +189,6 @@ function showHighscores() {
   populateScores();
   // show scores
   endGame();
-  hideQuestions();
 
   var highscoreShow = document.querySelector("#highscores");
   highscoreShow.className = "d-block";
