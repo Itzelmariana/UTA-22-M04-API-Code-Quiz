@@ -159,7 +159,7 @@ function startCountdown() {
   currentQuestion = 0;
   interval = setInterval(countdown, 1000);
   score = { total: 0 };
-  setTimer(50);
+  setTimer(60);
   var nodesWithFeedback = Array.from(document.querySelectorAll("p"))
     .filter(
       (el) => el.textContent === "Correct" || el.textContent === "Incorrect"
