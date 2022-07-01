@@ -188,7 +188,7 @@ function showHighscores() {
 
   // hide everything else
   var hideNav = document.querySelector("nav");
-  hideNav.className = "d-none";
+  hideNav.className = "d-none navbar navbar-light bg-light";
   var gameover = document.querySelector("#gameover");
   gameover.className = "d-none";
 
