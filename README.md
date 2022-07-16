@@ -15,4 +15,4 @@ Deployed project can be find at [link](https://itzelmariana.github.io/UTA-22-M04
 
 Mock up
 
-(./docs/04-web-apis-homework-demo.gif)
+![The Password Generator application.](./docs/04-web-apis-homework-demo.gif)
