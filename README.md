@@ -17,4 +17,4 @@ Mock up
 
 ![The Password Generator application.](./docs/04-web-apis-homework-demo.gif)
 
-![The Password Generator application.](https://itzelmariana.github.io/UTA-22-M04-API-Code-Quiz/)
+
